@@ -11,6 +11,7 @@ Requires: less
 Supplements: less
 Requires: file
 BuildRequires: pkgconfig(bash-completion)
+BuildRequires: zsh
 Suggests: html2text
 Suggests: odt2txt
 
