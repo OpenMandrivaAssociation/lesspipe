@@ -1,6 +1,6 @@
 Name: lesspipe
-Version: 2.06
-Release: 2
+Version: 2.08
+Release: 1
 Source0: https://github.com/wofr06/lesspipe/archive/refs/tags/v%{version}.tar.gz
 Summary: Input filter making the "less" file viewer far more powerful
 URL: https://github.com/wofr06/lesspipe
@@ -10,6 +10,7 @@ BuildArch: noarch
 Requires: less
 Supplements: less
 Requires: file
+BuildRequires: pkgconfig(bash-completion)
 Suggests: html2text
 Suggests: odt2txt
 
@@ -28,7 +29,7 @@ The filter is easily extensible for new formats.
 
 %prep
 %autosetup -p1
-./configure --yes
+./configure
 
 %build
 %make_build PREFIX=%{_prefix}
@@ -49,6 +50,6 @@ echo 'setenv LESSOPEN "|%{_bindir}/lesspipe.sh %s"' >%{buildroot}%{_sysconfdir}/
 %{_bindir}/vimcolor
 %{_bindir}/lesspipe.sh
 %{_sysconfdir}/profile.d/21lesspipe.*
-%{_sysconfdir}/bashcompletion.d/less_completion
+%{_datadir}/bash-completion/less_completion
 %{_datadir}/zsh/site-functions/_less
 %doc %{_mandir}/man1/lesspipe.1*
