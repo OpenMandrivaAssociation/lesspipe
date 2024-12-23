@@ -1,5 +1,5 @@
 Name: lesspipe
-Version: 2.16
+Version: 2.17
 Release: 1
 Source0: https://github.com/wofr06/lesspipe/archive/refs/tags/v%{version}.tar.gz
 Summary: Input filter making the "less" file viewer far more powerful
