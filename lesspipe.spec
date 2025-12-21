@@ -10,6 +10,11 @@ BuildArch: noarch
 Requires: less
 Supplements: less
 Requires: file
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(bash-completion)
 BuildRequires: zsh
 Suggests: html2text
