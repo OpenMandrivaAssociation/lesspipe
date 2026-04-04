@@ -1,5 +1,5 @@
 Name: lesspipe
-Version: 2.23
+Version: 2.24
 Release: 1
 Source0: https://github.com/wofr06/lesspipe/archive/refs/tags/v%{version}.tar.gz
 Summary: Input filter making the "less" file viewer far more powerful
@@ -50,7 +50,6 @@ echo 'setenv LESSOPEN "|%{_bindir}/lesspipe.sh %s"' >%{buildroot}%{_sysconfdir}/
 
 %files
 %{_bindir}/archive_color
-%{_bindir}/vimcolor
 %{_bindir}/lesspipe.sh
 %{_libexecdir}/lesspipe
 %{_sysconfdir}/bash_completion.d/*
