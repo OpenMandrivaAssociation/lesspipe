@@ -1,5 +1,5 @@
 Name: lesspipe
-Version: 2.27
+Version: 2.28
 Release: 1
 Source0: https://github.com/wofr06/lesspipe/archive/refs/tags/v%{version}.tar.gz
 Summary: Input filter making the "less" file viewer far more powerful
@@ -10,10 +10,6 @@ BuildArch: noarch
 Requires: less
 Supplements: less
 Requires: file
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool-base
-BuildRequires:	slibtool
 BuildRequires:	make
 BuildRequires: pkgconfig(bash-completion)
 BuildRequires: zsh
